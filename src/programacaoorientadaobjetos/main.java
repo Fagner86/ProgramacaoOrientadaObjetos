@@ -9,7 +9,7 @@ package programacaoorientadaobjetos;
  *
  * @author Fagner
  */
-public class ProgramacaoOrientadaObjetos {
+public class main {
 
     /**
      * @param args the command line arguments
