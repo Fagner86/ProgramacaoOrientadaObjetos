@@ -1,21 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package programacaoorientadaobjetos;
 
-/**
- *
- * @author Fagner
- */
+package programacaoorientadaobjetos;
 public class Scanner {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+     //criar um Scanner para obter entrada apatir da janela de comando 
+        java.util.Scanner entrada = new java.util.Scanner(System.in);
+         int num1; // primeiro numero
+         int num2;// segundo numero 
+        
+         
+         System.out.print("Primeiro numero: "); // saida 
+         num1 = entrada.nextInt();// le o primeiro numero 
+         
+         System.out.print("Segundo numero: ");
+         num2 = entrada.nextInt();// le o segundo numero 
+         
+   
+         
+         System.out.printf(" Numero1 "+num2+" , numero2 "+num1 ); // saida 
     }
-    
 }
