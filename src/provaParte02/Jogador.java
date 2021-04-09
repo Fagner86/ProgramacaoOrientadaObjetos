@@ -11,14 +11,14 @@ import java.util.List;
  *
  * @author Fagner
  */
-public class Jogadorr {
+public class Jogador {
        private static int cartasNoJogo = 5;
 
     private final String nome;
     private  List<CartaBaralho> mao;
     private  int pontos;
 
-    public Jogadorr(String nome, List<CartaBaralho>mao) {
+    public Jogador(String nome, List<CartaBaralho>mao) {
         this.nome = nome;
         this.mao = mao; 
         this.pontos = 0;
