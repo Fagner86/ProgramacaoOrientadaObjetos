@@ -16,9 +16,9 @@ import javax.swing.JOptionPane;
 public class Jogo extends javax.swing.JFrame {
 
     private Baralho baralho;
-    private Jogador jogador01;
-    private Jogador jogador02;
-    private Jogador jDaVez;
+    private Jogadorr jogador01;
+    private Jogadorr jogador02;
+    private Jogadorr jDaVez;
     private CartaBaralho cartaAtualJogadorUm;
     private CartaBaralho cartaAtualJogadorDois;
     private Integer totalJogadas;
@@ -38,8 +38,8 @@ public class Jogo extends javax.swing.JFrame {
         initComponents();
 
         this.baralho = new Baralho();
-        this.jogador01 = new Jogador("Carolayne", baralho.puxarMao());
-        this.jogador02 = new Jogador("Carol", baralho.puxarMao());
+        this.jogador01 = new Jogadorr("Carolayne", baralho.puxarMao());
+        this.jogador02 = new Jogadorr("Carol", baralho.puxarMao());
         this.jDaVez = jogador01;
 
         this.totalJogadas = 0;
@@ -505,8 +505,8 @@ public class Jogo extends javax.swing.JFrame {
 
     private void jButtonJogaNovamenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonJogaNovamenteActionPerformed
         this.baralho = new Baralho();
-        this.jogador01 = new Jogador("Carolayne", baralho.puxarMao());
-        this.jogador02 = new Jogador("Carol", baralho.puxarMao());
+        this.jogador01 = new Jogadorr("Carolayne", baralho.puxarMao());
+        this.jogador02 = new Jogadorr("Carol", baralho.puxarMao());
         this.jDaVez = jogador01;
         this.totalJogadas = 0;
         this.pontosJogador01 = 0;
