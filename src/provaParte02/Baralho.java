@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import javax.swing.ImageIcon;
+
 /**
  *
  * @author Fagner
@@ -48,9 +49,7 @@ public class Baralho {
         for (Naipe naipe : Naipe.values()) {
             for (Carta carta : Carta.values()) {
                 
-              /**  URL caminhoImagem =  getClass().getResource("/resources/");//////////////////////
-               // Tentei tirar esse erro mas não conseguir "java.net.URL.toExternalForm()" because "location" is null/////////////////////*/
-                 URL caminhoImagem = getClass().getClassLoader().getResource(carta.getPontos() + naipe.getNome() + ".png");
+                URL caminhoImagem = getClass().getClassLoader().getResource(carta.getPontos() + naipe.getNome() + ".png");
                 baralho.add(new CartaBaralho(carta, naipe, new ImageIcon(caminhoImagem)));
             }
         }
