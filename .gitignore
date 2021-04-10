@@ -1,3 +1,14 @@
+/build/
+/dist/
+/Prova 1 - Parte I/Prova 1 - Parte I/build/
+/Prova 1 - Parte I/Prova 1 - Parte I/dist/
+/Prova 1 - Parte I/Prova 1 - Parte I/nbproject/private/
+/src/Prova 1 - Parte I/Prova 1 - Parte I/build/
+/src/Prova 1 - Parte I/Prova 1 - Parte I/dist/
+/src/Prova 1 - Parte I/Prova 1 - Parte I/nbproject/private/
+/Prova 1 - Parte I/build/
+/Prova_1_-_Parte_I/nbproject/private/
+/Prova_1_-_Parte_I/build/
 # Compiled class file
 *.class
 
