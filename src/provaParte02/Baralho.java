@@ -49,7 +49,7 @@ public class Baralho {
         for (Naipe naipe : Naipe.values()) {
             for (Carta carta : Carta.values()) {
                 
-                URL caminhoImagem = getClass().getClassLoader().getResource(carta.getPontos() + naipe.getNome() + ".png");
+                URL caminhoImagem = getClass().getClassLoader().getResource("imagens");
                 baralho.add(new CartaBaralho(carta, naipe, new ImageIcon(caminhoImagem)));
             }
         }

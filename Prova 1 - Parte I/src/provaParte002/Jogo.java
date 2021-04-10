@@ -77,13 +77,8 @@ public class Jogo extends javax.swing.JFrame {
         }
     }
 
-    public void numerosate05() {
-        if (numeroMaior01 < numeroMaior02) {
-            // jButton10.setBackground(Color.GREEN);
-
-        }
-
-    }
+  
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
