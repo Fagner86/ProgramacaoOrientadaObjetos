@@ -52,8 +52,7 @@ public class Baralho {
                 
                
                 // Fiz em outra pasta e deu certo mas ai quando copiei para a pasta do repositório  para colocar no git fica esse erro 
-                // 
-                // Da esse erro 
+                //
                //Cannot invoke "java.net.URL.toExternalForm()" because "location" is null  
                 
               URL caminhoImagem = getClass().getClassLoader().getResource(carta.getPontos() + naipe.getNome() + ".png" );
