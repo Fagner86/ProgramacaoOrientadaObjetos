@@ -23,39 +23,48 @@ public class Baralho {
         this.cartas = this.geraBaralho();
 
     }
-    
-    public CartaBaralho puxarCarta(){
+
+    public CartaBaralho puxarCarta() {
         CartaBaralho carta = this.cartas.get(0);
         this.cartas.remove(0);
-        
+
         return carta;
     }
-    public List<CartaBaralho> puxarMao(){
+
+    public List<CartaBaralho> puxarMao() {
         List<CartaBaralho> mao = new ArrayList<>();
-        
+
         mao.add(this.puxarCarta());
         mao.add(this.puxarCarta());
         mao.add(this.puxarCarta());
         mao.add(this.puxarCarta());
         mao.add(this.puxarCarta());
-        
+
         return mao;
     }
-    
-    
+
     public List<CartaBaralho> geraBaralho() {
         List<CartaBaralho> baralho = new ArrayList<>();
 
         for (Naipe naipe : Naipe.values()) {
             for (Carta carta : Carta.values()) {
                 
-                URL caminhoImagem = getClass().getClassLoader().getResource("imagens");
+                
+               
+                // Fiz em outra pasta e deu certo mas ai quando copiei para a pasta do repositório  para colocar no git fica esse erro 
+                // 
+                // Da esse erro 
+               //Cannot invoke "java.net.URL.toExternalForm()" because "location" is null  
+                
+              URL caminhoImagem = getClass().getClassLoader().getResource(carta.getPontos() + naipe.getNome() + ".png" );
+                
+                // URL caminhoImagem = getClass().getClassLoader().getResource("imagens" );
                 baralho.add(new CartaBaralho(carta, naipe, new ImageIcon(caminhoImagem)));
             }
         }
 
         Collections.shuffle(baralho);
-        
+
         return baralho;
 
     }
